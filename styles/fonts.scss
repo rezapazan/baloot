@@ -1,0 +1,75 @@
+@layer base {
+  // IranSans
+  @font-face {
+    font-family: 'IRANSans';
+    src: url('../assets/fonts/IranSans/IRANSansWeb(FaNum)_UltraLight.woff2');
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: 'IRANSans';
+    src: url('../assets/fonts/IranSans/IRANSansWeb(FaNum)_Light.woff2');
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'IRANSans';
+    src: url('../assets/fonts/IranSans/IRANSansWeb(FaNum).woff2');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'IRANSans';
+    src: url('../assets/fonts/IranSans/IRANSansWeb(FaNum)_Medium.woff2');
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'IRANSans';
+    src: url('../assets/fonts/IranSans/IRANSansWeb(FaNum)_Bold.woff2');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'IRANSans';
+    src: url('../assets/fonts/IranSans/IRANSansWeb(FaNum)_Black.woff2');
+    font-weight: 900;
+  }
+
+  // Ahang
+  @font-face {
+    font-family: 'Ahang';
+    src: url('../assets/fonts/Ahang/Ahang-UltraLight.woff2');
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: 'Ahang';
+    src: url('../assets/fonts/Ahang/Ahang-Light.woff2');
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'Ahang';
+    src: url('../assets/fonts/Ahang/Ahang-Regular.woff2');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Ahang';
+    src: url('../assets/fonts/Ahang/Ahang-Medium.woff2');
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Ahang';
+    src: url('../assets/fonts/Ahang/Ahang-Bold.woff2');
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Ahang';
+    src: url('../assets/fonts/Ahang/Ahang-Black.woff2');
+    font-weight: 900;
+  }
+}
