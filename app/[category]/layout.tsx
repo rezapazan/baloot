@@ -29,7 +29,7 @@ const CategoriesLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <main>{children}</main>
+      <main className='w-full'>{children}</main>
       <ReactQueryDevtools />
     </QueryClientProvider>
   )

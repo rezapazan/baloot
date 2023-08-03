@@ -1,11 +1,11 @@
 'use client'
 
-import { Category } from '@/types'
+import { Category as CategoryType } from '@/types'
 import Link from 'next/link'
 import { useEffect, useState, useTransition } from 'react'
 import { usePathname } from 'next/navigation'
 
-const Item = ({ name, path }: Category) => {
+const Category = ({ name, path }: CategoryType) => {
   const pathname = usePathname()
   const [, startTransition] = useTransition()
   const [activeClassName, setActiveClassName] = useState<string>('')
@@ -22,7 +22,7 @@ const Item = ({ name, path }: Category) => {
 
   return (
     <Link
-      href={`/app/${path}`}
+      href={`/${path}`}
       className={`${activeClassName} flex h-9 w-full cursor-pointer items-center text-sm hover:text-red-primary transition-all ease-in-out duration-300`}
     >
       <span className='ml-3'>{name}</span>
@@ -30,4 +30,4 @@ const Item = ({ name, path }: Category) => {
   )
 }
 
-export default Item
+export default Category

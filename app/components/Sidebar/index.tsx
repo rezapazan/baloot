@@ -1,5 +1,5 @@
 import { Categories } from '@/types'
-import Item from './Item'
+import Item from './Category'
 
 const getCategories = async () => {
   const items = await fetch(
