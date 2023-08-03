@@ -1,1 +1,1 @@
-export type { SidebarItems, SidebarItem } from './sidebar'
+export type { Categories, Category } from './categories'

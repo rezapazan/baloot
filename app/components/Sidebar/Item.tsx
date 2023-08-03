@@ -1,11 +1,11 @@
 'use client'
 
-import { SidebarItem } from '@/types'
+import { Category } from '@/types'
 import Link from 'next/link'
-import React, { useEffect, useState, useTransition } from 'react'
+import { useEffect, useState, useTransition } from 'react'
 import { usePathname } from 'next/navigation'
 
-const Item = ({ name, path }: SidebarItem) => {
+const Item = ({ name, path }: Category) => {
   const pathname = usePathname()
   const [, startTransition] = useTransition()
   const [activeClassName, setActiveClassName] = useState<string>('')
@@ -22,7 +22,7 @@ const Item = ({ name, path }: SidebarItem) => {
 
   return (
     <Link
-      href={path}
+      href={`/app/${path}`}
       className={`${activeClassName} flex h-9 w-full cursor-pointer items-center text-sm hover:text-red-primary transition-all ease-in-out duration-300`}
     >
       <span className='ml-3'>{name}</span>
