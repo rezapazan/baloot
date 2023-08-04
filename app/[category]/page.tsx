@@ -26,7 +26,7 @@ const Category = () => {
   }, [pathname])
 
   return (
-    <div className='grid grid-cols-3 gap-7 pb-10 pt-20 pl-10 font-IranSans'>
+    <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-5 pb-10 pt-20 pl-10 font-IranSans'>
       {isLoading || isFetching ? (
         <p className='font-Ahang text-lg font-bold'>در حال دریافت اطلاعات...</p>
       ) : data ? (
