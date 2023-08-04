@@ -1,12 +1,18 @@
 import { Item } from '@/types'
 import axios from '@/utils'
 
-export const getItems = async () => {
-  const locations = await axios.request({
+const pageLimit = 5
+
+export const getItems = async (page: number) => {
+  const items = await axios.request({
     url: `/items`,
     method: 'GET',
     timeout: 2000,
+    params: {
+      _page: page,
+      _limit: pageLimit,
+    },
   })
 
-  return locations.data as Item[]
+  return items.data as Item[]
 }

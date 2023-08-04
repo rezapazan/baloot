@@ -1,9 +1,7 @@
 'use client'
 
-import { getItems } from '@/api/items'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
-import React, { useEffect } from 'react'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -15,18 +13,7 @@ const queryClient = new QueryClient({
   },
 })
 
-const prefetchItems = async () => {
-  await queryClient.prefetchQuery({
-    queryKey: ['items'],
-    queryFn: getItems,
-  })
-}
-
 const CategoriesLayout = ({ children }: { children: React.ReactNode }) => {
-  useEffect(() => {
-    prefetchItems()
-  }, [])
-
   return (
     <QueryClientProvider client={queryClient}>
       <main className='w-full'>{children}</main>
