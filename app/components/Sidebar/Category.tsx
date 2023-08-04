@@ -11,9 +11,9 @@ const Category = ({ name, path }: CategoryType) => {
   const [activeClassName, setActiveClassName] = useState<string>('')
 
   useEffect(() => {
-    pathname === path
+    pathname === `/app/${path}`
       ? startTransition(() => {
-          setActiveClassName('text-black')
+          setActiveClassName('text-black font-bold')
         })
       : startTransition(() => {
           setActiveClassName('text-gray-500')

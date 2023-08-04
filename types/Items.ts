@@ -6,17 +6,11 @@ export type Item = {
   date: number
 }
 
-// Items Context
-export type ItemsState = {
-  page: number
-  allItems: Item[]
-  currentPage: Item[]
-  pageSize: number
+// Items' filter Context
+export type filterState = {
+  categoryId: number | null
 }
 
-export type ItemsActions =
-  | { type: 'ADD'; payload: { items: Item[] } }
-  | {
-      type: 'INCREASE_PAGE'
-    }
+export type filterActions =
+  | { type: 'SET'; payload: filterState }
   | { type: 'RESET' }

@@ -2,6 +2,7 @@ import axios from 'axios'
 
 const axiosInstance = axios.create({
   baseURL: `https://my-json-server.typicode.com/rezapazan/baloot/`,
+  timeout: 2000,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
